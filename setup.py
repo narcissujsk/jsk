@@ -22,7 +22,7 @@ URL = "https://github.com/narcissujsk/jsk"
 NAME = "narcissujsk"
 
 #项目简介
-DESCRIPTION = "desc"
+DESCRIPTION = "narcissujsk"
 
 #LONG_DESCRIPTION为项目详细介绍，这里取README.md作为介绍
 here = path.abspath(path.dirname(__file__))
@@ -30,19 +30,19 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 
 #搜索关键词
-KEYWORDS = "demo"
+KEYWORDS = "jsk"
 
 #发布LICENSE
 LICENSE = "MIT"
 
 #包
-PACKAGES = ["demo"]
+PACKAGES = ["jsk"]
 
 #具体的设置
 setup(
     name=NAME,
     version=VERSION,
-    description=DESCRIPTION,
+    description=LONG_DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -51,12 +51,6 @@ setup(
         'Operating System :: OS Independent',
 
     ],
-    #指定控制台命令
-    entry_points={
-        'console_scripts': [
-            'demo = demo:main',#pip安装完成后可使用demo命令调用demo下的main方法
-        ],
-    },
     keywords=KEYWORDS,
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
