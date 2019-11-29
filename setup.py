@@ -7,19 +7,19 @@ from codecs import open
 from os import path
 
 #版本号
-VERSION = '0.0.2'
+VERSION = '0.0.1'
 
 #发布作者
 AUTHOR = "jsk"
 
 #邮箱
-AUTHOR_EMAIL = "1791121094@qq.com"
+AUTHOR_EMAIL = "narcissujsk@gmail.com"
 
 #项目网址
-URL = "https://github.com/narcisssujsk/jsk"
+URL = "https://github.com/narcissujsk/jsk"
 
 #项目名称
-NAME = "jsk"
+NAME = "narcissujsk"
 
 #项目简介
 DESCRIPTION = "desc"
@@ -27,22 +27,22 @@ DESCRIPTION = "desc"
 #LONG_DESCRIPTION为项目详细介绍，这里取README.md作为介绍
 here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-     LONG_DESCRIPTION = f.read()
+    LONG_DESCRIPTION = f.read()
 
 #搜索关键词
-KEYWORDS = "jsk"
+KEYWORDS = "demo"
 
 #发布LICENSE
 LICENSE = "MIT"
 
 #包
-PACKAGES = ["jsk"]
+PACKAGES = ["demo"]
 
 #具体的设置
 setup(
     name=NAME,
     version=VERSION,
-    description=LONG_DESCRIPTION,
+    description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -54,7 +54,7 @@ setup(
     #指定控制台命令
     entry_points={
         'console_scripts': [
-  		'demo = iscsinar.demo:main',#pip安装完成后可使用demo命令调用demo下的main方法
+            'demo = demo:main',#pip安装完成后可使用demo命令调用demo下的main方法
         ],
     },
     keywords=KEYWORDS,
